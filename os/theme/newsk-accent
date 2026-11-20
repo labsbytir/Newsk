@@ -1,0 +1,42 @@
+#!/bin/sh
+# newsk-accent - set the Newsk system accent color.
+# Usage: newsk-accent <name>   (see os/theme/accents)
+# Rewrites: Openbox theme, GTK accent CSS, Xresources, wallpaper variant.
+set -e
+THEME_DIR="$(dirname "$0")"
+ACCENTS="$THEME_DIR/accents"
+NAME="${1:-blue}"
+
+HEX=$(awk -v n="$NAME" '$1==n {print $2}' "$ACCENTS")
+if [ -z "$HEX" ]; then
+  echo "unknown accent '$NAME'; choose from:" >&2
+  cut -d' ' -f1 "$ACCENTS" >&2
+  exit 1
+fi
+ACCENT="#${HEX}"
+echo "$NAME" > "$HOME/.config/newsk-accent"
+
+# 1. Openbox (windows follow the website tokens + accent)
+mkdir -p "$HOME/.config/openbox"
+sed "s/__ACCENT__/$ACCENT/g" "$THEME_DIR/openbox-themerc.template" > "$HOME/.config/openbox/themerc"
+openbox --reconfigure 2>/dev/null || true
+
+# 2. GTK apps (EmDash + dialogs) via accent hook
+mkdir -p "$HOME/.config/gtk-3.0"
+sed "s/__ACCENT__/$ACCENT/g" "$THEME_DIR/gtk.css.template" > "$HOME/.config/gtk-3.0/gtk.css"
+
+# 3. Terminals
+{
+  echo "*.foreground: #f5f5f5"
+  echo "*.background: #0e0e0e"
+  echo "*.color12: $ACCENT"
+  echo "XTerm*selectToClipboard: true"
+} > "$HOME/.Xresources"
+xrdb -merge "$HOME/.Xresources" 2>/dev/null || true
+
+# 4. Wallpaper follows the accent (pixel-art pack variants)
+WP="/usr/share/newsk/wallpapers/pixel/wp-01-$NAME.png"
+[ -f "$WP" ] || WP="/usr/share/newsk/wallpapers/pixel/wp-01.png"
+feh --bg-fill "$WP" 2>/dev/null || true
+
+echo "accent: $NAME ($ACCENT)"

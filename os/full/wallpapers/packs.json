@@ -1,0 +1,109 @@
+{
+ "packs": [
+  {
+   "country": "France",
+   "title": "Change in Newspaper Circulation in France, 1999-2011.png",
+   "artist": "<a href=\"https://en.wikipedia.org/wiki/User:Marlow4\" class=\"extiw\" title=\"w:User:Marlow4\">Marlow4</a>",
+   "license": "CC BY-SA 3.0",
+   "original": "wp-france.jpg",
+   "pixel": "pixel/wp-france.png",
+   "accents": {
+    "0000FF": "pixel/wp-france-0000FF.png",
+    "00A86B": "pixel/wp-france-00A86B.png",
+    "FFAA00": "pixel/wp-france-FFAA00.png",
+    "FF3333": "pixel/wp-france-FF3333.png",
+    "8B5CF6": "pixel/wp-france-8B5CF6.png"
+   }
+  },
+  {
+   "country": "Japan",
+   "title": "First-Issue-Yomiuri-Shimbun-Front-November-2-1874.png",
+   "artist": "Yomiuri Shimbun",
+   "license": "Public domain",
+   "original": "wp-japan.jpg",
+   "pixel": "pixel/wp-japan.png",
+   "accents": {
+    "0000FF": "pixel/wp-japan-0000FF.png",
+    "00A86B": "pixel/wp-japan-00A86B.png",
+    "FFAA00": "pixel/wp-japan-FFAA00.png",
+    "FF3333": "pixel/wp-japan-FF3333.png",
+    "8B5CF6": "pixel/wp-japan-8B5CF6.png"
+   }
+  },
+  {
+   "country": "Germany",
+   "title": "BMW Welt, M\u00fanich, Alemania, 2013-04-22, DD 03.jpg",
+   "artist": "<bdi><a href=\"https://www.wikidata.org/wiki/Q28147777\" class=\"extiw\" title=\"d:Q28147777\"><span title=\"Spanish photographer\">Diego Delso</span></a></bdi>",
+   "license": "CC BY-SA 3.0",
+   "original": "wp-germany.jpg",
+   "pixel": "pixel/wp-germany.png",
+   "accents": {
+    "0000FF": "pixel/wp-germany-0000FF.png",
+    "00A86B": "pixel/wp-germany-00A86B.png",
+    "FFAA00": "pixel/wp-germany-FFAA00.png",
+    "FF3333": "pixel/wp-germany-FF3333.png",
+    "8B5CF6": "pixel/wp-germany-8B5CF6.png"
+   }
+  },
+  {
+   "country": "United Kingdom",
+   "title": "'The Sun' bus (9661587335).jpg",
+   "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/88920309@N05\">grassrootsgroundswell</a>",
+   "license": "CC BY 2.0",
+   "original": "wp-united_kingdom.jpg",
+   "pixel": "pixel/wp-united_kingdom.png",
+   "accents": {
+    "0000FF": "pixel/wp-united_kingdom-0000FF.png",
+    "00A86B": "pixel/wp-united_kingdom-00A86B.png",
+    "FFAA00": "pixel/wp-united_kingdom-FFAA00.png",
+    "FF3333": "pixel/wp-united_kingdom-FF3333.png",
+    "8B5CF6": "pixel/wp-united_kingdom-8B5CF6.png"
+   }
+  },
+  {
+   "country": "Italy",
+   "title": "Corriere Della Sera - 14 giugno 1942 - MAS Italiani nel Mar Nero - titolo.JPG",
+   "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Stefano1111\" title=\"User:Stefano1111\">Stefano Stabile</a>",
+   "license": "Public domain",
+   "original": "wp-italy.jpg",
+   "pixel": "pixel/wp-italy.png",
+   "accents": {
+    "0000FF": "pixel/wp-italy-0000FF.png",
+    "00A86B": "pixel/wp-italy-00A86B.png",
+    "FFAA00": "pixel/wp-italy-FFAA00.png",
+    "FF3333": "pixel/wp-italy-FF3333.png",
+    "8B5CF6": "pixel/wp-italy-8B5CF6.png"
+   }
+  },
+  {
+   "country": "Zimbabwe",
+   "title": "2010 newspaper press Bulawayo Zimbabwe 6423798769.jpg",
+   "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/60629773@N07\">David Brewer</a> from Brookmans Park, England",
+   "license": "CC BY-SA 2.0",
+   "original": "wp-zimbabwe.jpg",
+   "pixel": "pixel/wp-zimbabwe.png",
+   "accents": {
+    "0000FF": "pixel/wp-zimbabwe-0000FF.png",
+    "00A86B": "pixel/wp-zimbabwe-00A86B.png",
+    "FFAA00": "pixel/wp-zimbabwe-FFAA00.png",
+    "FF3333": "pixel/wp-zimbabwe-FF3333.png",
+    "8B5CF6": "pixel/wp-zimbabwe-8B5CF6.png"
+   }
+  },
+  {
+   "country": "United States",
+   "title": "Dewey Defeats Truman.jpg",
+   "artist": "<bdi><a href=\"https://www.wikidata.org/wiki/Q103426900\" class=\"extiw\" title=\"d:Q103426900\"><span title=\"American photographer (1913-1988)\">Byron H. Rollins</span></a></bdi>",
+   "license": "Public domain",
+   "original": "wp-united_states.jpg",
+   "pixel": "pixel/wp-united_states.png",
+   "accents": {
+    "0000FF": "pixel/wp-united_states-0000FF.png",
+    "00A86B": "pixel/wp-united_states-00A86B.png",
+    "FFAA00": "pixel/wp-united_states-FFAA00.png",
+    "FF3333": "pixel/wp-united_states-FF3333.png",
+    "8B5CF6": "pixel/wp-united_states-8B5CF6.png"
+   }
+  }
+ ]
+}

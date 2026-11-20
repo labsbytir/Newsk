@@ -1,0 +1,10 @@
+# Newsk design tokens (match Newsk.dev)
+--color-1: #0e0e0e  # near-black surfaces
+--color-2: #f5f5f5  # off-white text on dark
+--color-3: #d0d0d0  # text on dark
+--color-4: #8e8e8e  # muted text on dark
+--color-5: #575757  # muted text on light
+--color-7: #1b1b1b  # hairlines on dark
+--color-8: #e2e2e2  # hairlines on light
+--accent:  #0000ff  # electric blue (default; user-selectable)
+--font:    "JetBrains Mono"
