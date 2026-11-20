@@ -870,7 +870,7 @@ if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.support
         <p class="dg-board__head m-text-3"><span>Piece</span><span>Status</span></p>
         <div class="dg-listwrap">
           <div class="dg-band" aria-hidden="true"></div>
-          <ol class="dg-list" data-8b-items=":scope > li"><li class="dg-row m-text-5"><span class="dg-name">News directory</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>28,384 sources, curated</span></span></li><li class="dg-row m-text-5"><span class="dg-name">Headless scraper</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Lightpanda CDP, JSONL out</span></span></li><li class="dg-row m-text-5"><span class="dg-name">Newsk Lite</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Pi-ready, MiniLM + pglite</span></span></li><li class="dg-row m-text-5"><span class="dg-name">Newsk Full</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Openbox desktop + editor</span></span></li><li class="dg-row m-text-5"><span class="dg-name">EmDash editor</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>WordPress + Harper + mind map</span></span></li><li class="dg-row m-text-5"><span class="dg-name">Datasets</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>CC licensed, attributed</span></span></li></ol>
+          <ol class="dg-list" data-8b-items=":scope > li"><li class="dg-row m-text-5"><span class="dg-name">Newsk List</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Pre-configured watchlist to monitor your region</span></span></li><li class="dg-row m-text-5"><span class="dg-name">GoNewsk scraper</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Automated fact-finding for worldwide signals</span></span></li><li class="dg-row m-text-5"><span class="dg-name">Newsk Lite</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Small kit that gathers news offline</span></span></li><li class="dg-row m-text-5"><span class="dg-name">Newsk Full</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Full desk to write and publish in one place</span></span></li><li class="dg-row m-text-5"><span class="dg-name">EmDash editor</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>News-first markdown editor for stories</span></span></li><li class="dg-row m-text-5"><span class="dg-name">NewskData</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Monitored worldwide coverage, bias and reach</span></span></li></ol>
         </div>
         <p class="dg-sum m-text">Six pieces, one core: <strong>everything open source, everything documented.</strong> Take the parts you need and walk away.</p>
       </div>
@@ -884,30 +884,55 @@ if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.support
     <h2 class="pr-title m-text-2">The crisis in numbers</h2>
     <p class="pr-note m-text">Every figure below is quoted <span class="m-select" data-8b-motion="select">word for word</span> from its source, with the exact location noted.</p>
   </div>
+  <div class="pr-block">
+    <h3 class="m-text-4">Workforce &amp; "News Deserts"</h3>
   <table class="pr-table">
-    <caption class="sr-only">Local news crisis statistics with sources</caption>
+    <caption class="sr-only">Workforce and news deserts statistics with sources</caption>
     <thead class="m-text-3">
       <tr><th scope="col">Finding</th><th scope="col">Scale</th><th scope="col">Source</th></tr>
     </thead>
     <tbody data-8b-items=":scope > tr:not(.pr-group)" data-8b-motion="dash">
-      <tr class="pr-group"><th colspan="3" scope="colgroup" class="m-text-3">Workforce &amp; "News Deserts"</th></tr>
       <tr><th scope="row"><span class="pr-name m-text-5">75% to 81% decline in local journalists since 2002 (dropping from ~40 to 7.8 per 100,000 residents)</span><span class="pr-models m-text-3">Muck Rack LJI 2025, summary Metrics; Rebuild Local News 2026 data, key findings bullet 1, sentences 1–2</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:170"></span><span class="m-text-3">cited</span></span></td><td class="pr-price m-text-5"><a class="m-link" href="https://muckrack.com/resources/research/local-journalist-index-2025">Muck Rack</a></td></tr>
       <tr><th scope="row"><span class="pr-name m-text-5">Over 1,000 counties (1 in 3) with zero full-time local journalists, affecting 20.6 million people; urban hubs like Los Angeles (3.6) and Houston (3.9)</span><span class="pr-models m-text-3">Muck Rack LJI 2025, summary Shortfalls</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:170"></span><span class="m-text-3">cited</span></span></td><td class="pr-price m-text-5"><a class="m-link" href="https://muckrack.com/resources/research/local-journalist-index-2025">Muck Rack</a></td></tr>
       <tr><th scope="row"><span class="pr-name m-text-5">70% of U.S. counties (209 million people) fall below the national average; only 33 counties match 2002 levels</span><span class="pr-models m-text-3">Rebuild Local News 2026 data, key findings bullet 1, sentences 4–5</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:170"></span><span class="m-text-3">cited</span></span></td><td class="pr-price m-text-5">Rebuild Local News</td></tr>
       <tr><th scope="row"><span class="pr-name m-text-5">Over 2,500 U.S. newspapers lost since 2005</span><span class="pr-models m-text-3">Medill Local News Initiative, State of Local News executive summary</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:170"></span><span class="m-text-3">cited</span></span></td><td class="pr-price m-text-5"><a class="m-link" href="https://localnewsauthority.com/local-news-statistics-and-data/">Medill</a></td></tr>
     </tbody>
+  </table>
+  </div>
+  <div class="pr-block">
+    <h3 class="m-text-4">Civic Coverage Blind Spots (Q1 2026)</h3>
+  <table class="pr-table">
+    <caption class="sr-only">Civic coverage blind spots statistics with sources</caption>
+    <thead class="m-text-3">
+      <tr><th scope="col">Finding</th><th scope="col">Scale</th><th scope="col">Source</th></tr>
+    </thead>
     <tbody data-8b-items=":scope > tr:not(.pr-group)" data-8b-motion="dash">
-      <tr class="pr-group"><th colspan="3" scope="colgroup" class="m-text-3">Civic Coverage Blind Spots (Q1 2026)</th></tr>
       <tr><th scope="row"><span class="pr-name m-text-5">Counties lacking local beat coverage (82% transportation, 77% education, 77% environment, 76% health)</span><span class="pr-models m-text-3">Rebuild Local News 2026 data, key findings bullet 2, sentences 1–4</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:170"></span><span class="m-text-3">cited</span></span></td><td class="pr-price m-text-5">Rebuild Local News</td></tr>
       <tr><th scope="row"><span class="pr-name m-text-5">Nearly 20% of coverage dedicated to crime in low-journalist counties (&lt;5 LJEs per 100,000)</span><span class="pr-models m-text-3">Rebuild Local News 2026 data, key findings bullet 3, sentences 1–2</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:170"></span><span class="m-text-3">cited</span></span></td><td class="pr-price m-text-5">Rebuild Local News</td></tr>
     </tbody>
+  </table>
+  </div>
+  <div class="pr-block">
+    <h3 class="m-text-4">Financial &amp; Civic Consequences</h3>
+  <table class="pr-table">
+    <caption class="sr-only">Financial and civic consequences statistics with sources</caption>
+    <thead class="m-text-3">
+      <tr><th scope="col">Finding</th><th scope="col">Scale</th><th scope="col">Source</th></tr>
+    </thead>
     <tbody data-8b-items=":scope > tr:not(.pr-group)" data-8b-motion="dash">
-      <tr class="pr-group"><th colspan="3" scope="colgroup" class="m-text-3">Financial &amp; Civic Consequences</th></tr>
       <tr><th scope="row"><span class="pr-name m-text-5">17% higher municipal borrowing costs and $1.1 billion in annual financial harm</span><span class="pr-models m-text-3">Rebuild Local News 2026 data, key findings bullet 4; $1.1 Billion Borrowing Costs Report</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:170"></span><span class="m-text-3">cited</span></span></td><td class="pr-price m-text-5"><a class="m-link" href="https://www.rebuildlocalnews.org/new-report-reveals-local-news-shortage-is-costing-communities-1-1-billion-a-year/">Rebuild Local News</a></td></tr>
       <tr><th scope="row"><span class="pr-name m-text-5">Lower civic participation and higher rates of community loneliness</span><span class="pr-models m-text-3">Rebuild Local News 2026 data, key findings bullets 5–6</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:170"></span><span class="m-text-3">cited</span></span></td><td class="pr-price m-text-5">Rebuild Local News</td></tr>
     </tbody>
+  </table>
+  </div>
+  <div class="pr-block">
+    <h3 class="m-text-4">Audience Habits, Financial Support &amp; Publisher Burnout</h3>
+  <table class="pr-table">
+    <caption class="sr-only">Audience habits, financial support and publisher burnout statistics with sources</caption>
+    <thead class="m-text-3">
+      <tr><th scope="col">Finding</th><th scope="col">Scale</th><th scope="col">Source</th></tr>
+    </thead>
     <tbody data-8b-items=":scope > tr:not(.pr-group)" data-8b-motion="dash">
-      <tr class="pr-group"><th colspan="3" scope="colgroup" class="m-text-3">Audience Habits, Financial Support &amp; Publisher Burnout</th></tr>
       <tr><th scope="row"><span class="pr-name m-text-5">80% say local news is at least somewhat important to their community</span><span class="pr-models m-text-3">Pew Research Center Local News Fact Sheet (April 14, 2026), How important is local news?, paragraph 1</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:170"></span><span class="m-text-3">cited</span></span></td><td class="pr-price m-text-5">Pew Research Center</td></tr>
       <tr><th scope="row"><span class="pr-name m-text-5">88% have not paid for local news in the past year; 50% of non-payers say they find plenty for free</span><span class="pr-models m-text-3">Pew Fact Sheet, Paying for local news, paragraphs 2–3</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:170"></span><span class="m-text-3">cited</span></span></td><td class="pr-price m-text-5">Pew Research Center</td></tr>
       <tr><th scope="row"><span class="pr-name m-text-5">57% mistakenly think local news outlets are doing well financially</span><span class="pr-models m-text-3">Pew Fact Sheet, Paying for local news, paragraph 1</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:170"></span><span class="m-text-3">cited</span></span></td><td class="pr-price m-text-5">Pew Research Center</td></tr>
@@ -915,6 +940,7 @@ if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.support
       <tr><th scope="row"><span class="pr-name m-text-5">Over 50% of independent publishers report burnout; 1 in 5 earn less than 25% of their personal income from their outlet</span><span class="pr-models m-text-3">Syracuse University IDJC 2026, Highlights bullets 8 and 12</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:170"></span><span class="m-text-3">cited</span></span></td><td class="pr-price m-text-5">Syracuse IDJC</td></tr>
     </tbody>
   </table>
+  </div>
   <p class="pr-foot m-text-3">Figures change as new reports land; see each source for full context and methodology.</p>
 </section>
 <!-- prices: price list table grouped by device, each row with models, a time bar and a price (demo: Price wall) -->
@@ -931,11 +957,11 @@ if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.support
     </thead>
     <tbody data-8b-items=":scope > tr:not(.pr-group)" data-8b-motion="dash">
       <tr class="pr-group"><th colspan="3" scope="colgroup" class="m-text-3">Directories</th></tr>
-      <tr><th scope="row"><span class="pr-name m-text-5">NewskList</span><span class="pr-models m-text-3">28,384 curated news sources, weekly</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:170"></span><span class="m-text-3">CSV</span></span></td><td class="pr-price m-text-5">Free</td></tr>
-      <tr><th scope="row"><span class="pr-name m-text-5">NewskData</span><span class="pr-models m-text-3">Mirror of the directory + scraped JSONL</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:170"></span><span class="m-text-3">JSONL</span></span></td><td class="pr-price m-text-5">Free</td></tr>
+      <tr><th scope="row"><span class="pr-name m-text-5">Newsk List</span><span class="pr-models m-text-3">Pre-configured watchlist to monitor your region, weekly</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:170"></span><span class="m-text-3">CSV</span></span></td><td class="pr-price m-text-5">Free</td></tr>
+      <tr><th scope="row"><span class="pr-name m-text-5">NewskData</span><span class="pr-models m-text-3">Monitored worldwide coverage studying bias and reach, gathered weekly</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:170"></span><span class="m-text-3">JSONL</span></span></td><td class="pr-price m-text-5">Free</td></tr>
     </tbody>
     <tbody data-8b-items=":scope > tr:not(.pr-group)" data-8b-motion="dash">
-      <tr class="pr-group"><th colspan="3" scope="colgroup" class="m-text-3">Scraped</th></tr>
+      <tr class="pr-group"><th colspan="3" scope="colgroup" class="m-text-3">Gathered</th></tr>
       <tr><th scope="row"><span class="pr-name m-text-5">results.jsonl</span><span class="pr-models m-text-3">Title + text per source, reconciled</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:90"></span><span class="m-text-3">JSONL</span></span></td><td class="pr-price m-text-5">Free</td></tr>
       <tr><th scope="row"><span class="pr-name m-text-5">Wallpapers</span><span class="pr-models m-text-3">15 press photos + pixel-art set, attributed</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:40"></span><span class="m-text-3">JPG+PNG</span></span></td><td class="pr-price m-text-5">Free</td></tr>
     </tbody>
@@ -979,8 +1005,8 @@ if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.support
       <tr><td></td><th scope="col" class="m-text-4">GoNewsk</th><th scope="col" class="m-text-4">EmDash</th><th scope="col" class="m-text-4">Newsk OS</th></tr>
     </thead>
     <tbody class="m-text-5" data-8b-items=":scope > tr" data-8b-motion="dash">
-      <tr><th scope="row" class="m-text-3"><span class="m-dash" aria-hidden="true"></span>What it is</th><td>Headless news scraper</td><td>Qt text editor fork</td><td>Wolfi-based flavor</td></tr>
-      <tr><th scope="row" class="m-text-3"><span class="m-dash" aria-hidden="true"></span>Headline feature</th><td>28k sources to JSONL</td><td>WordPress + Harper + mind map</td><td>Lite 114 MB, Pi-ready</td></tr>
+      <tr><th scope="row" class="m-text-3"><span class="m-dash" aria-hidden="true"></span>What it is</th><td>Automated fact-finding for worldwide signals</td><td>News-first markdown editor</td><td>Field kit that runs anywhere</td></tr>
+      <tr><th scope="row" class="m-text-3"><span class="m-dash" aria-hidden="true"></span>Headline feature</th><td>Gathers worldwide signals daily</td><td>Write, check, and map your story</td><td>Fits on a small computer</td></tr>
       <tr><th scope="row" class="m-text-3"><span class="m-dash" aria-hidden="true"></span>License</th><td>MIT</td><td>GPL-3.0</td><td>MIT + upstream</td></tr>
       <tr><th scope="row" class="m-text-3"><span class="m-dash" aria-hidden="true"></span>Status</th><td>v0.1.1 released</td><td>Sandbox branch</td><td>Lite + Full profiles</td></tr>
     </tbody>
@@ -1023,7 +1049,7 @@ if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.support
   <p class="m-spread" data-8b-motion="spread" data-8b-split="words">No newsroom? Take the field kit</p>
   <div class="ml-grid l-grid">
     <h2 class="ml-title m-text-2">Pack it.</h2>
-    <ol class="ml-steps" data-8b-items=":scope > li" data-8b-motion="dash"><li class="ml-step"><span class="m-dash" aria-hidden="true"></span><h3 class="m-text-5">Flash the Pi</h3><p class="m-text">Pi OS Lite 64-bit, podman, the Newsk service file. Ten minutes.</p></li><li class="ml-step"><span class="m-dash" aria-hidden="true"></span><h3 class="m-text-5">Load the image</h3><p class="m-text">One pull: the Lite image, arm64, 114 MB. Sources CSV on the card.</p></li><li class="ml-step"><span class="m-dash" aria-hidden="true"></span><h3 class="m-text-5">Scrape offline</h3><p class="m-text">Run the directory, reconcile locally, review on EmDash.</p></li><li class="ml-step"><span class="m-dash" aria-hidden="true"></span><h3 class="m-text-5">Sync when online</h3><p class="m-text">Push JSONL to R2, publish the story, charge everything.</p></li></ol>
+    <ol class="ml-steps" data-8b-items=":scope > li" data-8b-motion="dash"><li class="ml-step"><span class="m-dash" aria-hidden="true"></span><h3 class="m-text-5">Flash the Pi</h3><p class="m-text">Pi OS Lite 64-bit, podman, the Newsk service file. Ten minutes.</p></li><li class="ml-step"><span class="m-dash" aria-hidden="true"></span><h3 class="m-text-5">Load the image</h3><p class="m-text">One pull: the Lite image, arm64, 114 MB. Sources CSV on the card.</p></li><li class="ml-step"><span class="m-dash" aria-hidden="true"></span><h3 class="m-text-5">Gather offline</h3><p class="m-text">Run the directory, reconcile locally, review on EmDash.</p></li><li class="ml-step"><span class="m-dash" aria-hidden="true"></span><h3 class="m-text-5">Sync when online</h3><p class="m-text">Push JSONL to R2, publish the story, charge everything.</p></li></ol>
     <div class="ml-cta">
       <a class="m-btn" href="#visit"><span class="m-btn__label">Get the kit list</span></a>
       <p class="m-text-3">Total kit cost: a Pi, a card, a charger.</p>
@@ -1040,7 +1066,7 @@ if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.support
   <p class="m-spread" data-8b-motion="spread" data-8b-split="words">Asked about Newsk</p>
   <div class="fq-grid l-grid">
     <h2 class="fq-title m-text-2"><span>Before</span> <span>you</span> <span>ask.</span></h2>
-    <div class="fq-list" data-8b-items=":scope > details"><details class="fq-item"><summary class="m-text-4">Is Newsk really free?</summary><p class="m-text">Yes. MIT and GPL-licensed code, open datasets, open methods. Bring your own hardware.</p></details><details class="fq-item"><summary class="m-text-4">What hardware do I need?</summary><p class="m-text">A Raspberry Pi 4 or 5 with a 32 GB card runs the Lite flavor. Anything with a browser reads the site.</p></details><details class="fq-item"><summary class="m-text-4">Where does the data live?</summary><p class="m-text">Sources in NewskList/NewskData on GitHub; scraped JSONL in R2; nothing of yours leaves your machine unless you upload it.</p></details><details class="fq-item"><summary class="m-text-4">Can I contribute?</summary><p class="m-text">Yes — issues and pull requests at github.com/labsbytir. Docs fixes count as contributions.</p></details><details class="fq-item"><summary class="m-text-4">Who runs Newsk?</summary><p class="m-text">tir labs inc., created by github.com/pennytir. It is a News initiative, not a newsroom.</p></details><details class="fq-item"><summary class="m-text-4">Which license?</summary><p class="m-text">Scraper MIT, editor GPL-3.0/2.0, datasets CC with attribution. See each repo.</p></details></div>
+    <div class="fq-list" data-8b-items=":scope > details"><details class="fq-item"><summary class="m-text-4">Is Newsk really free?</summary><p class="m-text">Yes. MIT and GPL-licensed code, open datasets, open methods. Bring your own hardware.</p></details><details class="fq-item"><summary class="m-text-4">What hardware do I need?</summary><p class="m-text">A Raspberry Pi 4 or 5 with a 32 GB card runs the Lite flavor. Anything with a browser reads the site.</p></details><details class="fq-item"><summary class="m-text-4">Where does the data live?</summary><p class="m-text">Sources in Newsk List/NewskData on GitHub; gathered JSONL in R2; nothing of yours leaves your machine unless you upload it.</p></details><details class="fq-item"><summary class="m-text-4">Can I contribute?</summary><p class="m-text">Yes — issues and pull requests at github.com/labsbytir. Docs fixes count as contributions.</p></details><details class="fq-item"><summary class="m-text-4">Who runs Newsk?</summary><p class="m-text">tir labs inc., created by github.com/pennytir. It is a News initiative, not a newsroom.</p></details><details class="fq-item"><summary class="m-text-4">Which license?</summary><p class="m-text">Scraper MIT, editor GPL-3.0/2.0, datasets CC with attribution. See each repo.</p></details></div>
   </div>
 </section>
 <!-- visit: contact and booking: staircase heading, address, hours, phone and email, a photo and a booking form (placeholders) (animation: scene:visit-grow) -->
@@ -1060,7 +1086,7 @@ if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.support
   </div>
 </section>
 </main>
-<!-- footer: dashed rule, one-line description, address, contact and page links, copyright and the Design: 8B credit -->
+<!-- footer: dashed rule, one-line description, address, contact and page links, copyright -->
 <footer id="footer" class="m-surface" data-8b-section="footer">
   <div class="ft-rule" aria-hidden="true" data-8b-items=":scope > .m-dash" data-8b-motion="dash"><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span></div>
   <div class="ft-grid l-grid">
@@ -1087,7 +1113,7 @@ if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.support
     </div>
   </div>
   <div class="ft-legal m-text-3">
-    <p>© 2026 tir labs inc. · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></p>
+    <p>© 2026 tir labs inc. · Designed by Open Source</p>
     <a class="m-link" href="#opening">Back to top</a>
   </div>
 </footer>
