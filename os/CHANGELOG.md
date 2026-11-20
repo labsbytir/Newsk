@@ -3,6 +3,9 @@
 ## Unreleased
 - Backfill remaining 8 country wallpapers (Wikimedia rate limits).
 
+## Unreleased
+- Three packages: Edge (bare headless), Lite (AI optional at first boot), Full (desktop).
+
 ## 0.1.0 — Flavor split + theming
 - Newsk base image (`os/base.yaml`): wolfi-base, Newsk key, OCI annotations.
 - Lite profile (`os/lite.yaml`): headless scraper + MiniLM embeddings + pglite.

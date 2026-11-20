@@ -11,7 +11,6 @@ contents:
     - nodejs-24
     - npm
     - gonewsk
-    - gonewsk-embed-minilm
 
 accounts:
   groups:
@@ -27,6 +26,6 @@ entrypoint:
 
 annotations:
   org.opencontainers.image.title: "Newsk Lite"
-  org.opencontainers.image.description: "Newsk Lite: headless news scraper + MiniLM embeddings + pglite. tir labs inc."
+  org.opencontainers.image.description: "Newsk Lite: headless scraper, AI packs install on first boot. tir labs inc."
   org.opencontainers.image.vendor: "tir labs inc."
   org.opencontainers.image.url: "https://github.com/labsbytir/GoNewsk"
