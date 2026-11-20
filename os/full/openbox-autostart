@@ -1,0 +1,4 @@
+# Newsk Full Openbox autostart.
+feh --bg-fill /usr/share/newsk/wallpapers/wp-01.jpg &
+xterm -e "echo Newsk Full; exec sh" &
+emdash &

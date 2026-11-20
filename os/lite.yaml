@@ -1,0 +1,32 @@
+# Newsk Lite — scraping + AI model. Headless, no GUI.
+contents:
+  keyring:
+    - https://packages.wolfi.dev/os/wolfi-signing.rsa.pub
+    - melange.rsa.pub
+  repositories:
+    - https://packages.wolfi.dev/os
+  packages:
+    - wolfi-base
+    - ca-certificates-bundle
+    - nodejs-24
+    - npm
+    - gonewsk
+    - gonewsk-embed-minilm
+
+accounts:
+  groups:
+    - groupname: nonroot
+      gid: 65532
+  users:
+    - username: nonroot
+      uid: 65532
+  run-as: nonroot
+
+entrypoint:
+  command: /usr/bin/entrypoint.sh
+
+annotations:
+  org.opencontainers.image.title: "Newsk Lite"
+  org.opencontainers.image.description: "Newsk Lite: headless news scraper + MiniLM embeddings + pglite. tir labs inc."
+  org.opencontainers.image.vendor: "tir labs inc."
+  org.opencontainers.image.url: "https://github.com/labsbytir/GoNewsk"

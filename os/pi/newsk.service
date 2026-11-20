@@ -1,0 +1,21 @@
+[Unit]
+Description=Newsk scraper
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Restart=always
+RestartSec=30
+MemoryMax=1500M
+ExecStartPre=/usr/bin/podman pull ghcr.io/labsbytir/newsk:latest
+ExecStart=/usr/bin/podman run --rm --name newsk \
+  --memory=1200m --cpus=3 \
+  -v %h/newsk-data:/data \
+  -e SOURCES_CSV=/data/sources.csv \
+  -e OUTPUT=/data/results.jsonl \
+  -e RECONCILED=/data/reconciled.jsonl \
+  ghcr.io/labsbytir/newsk:latest
+ExecStop=/usr/bin/podman stop newsk
+
+[Install]
+WantedBy=default.target

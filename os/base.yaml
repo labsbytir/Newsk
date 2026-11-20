@@ -1,0 +1,24 @@
+contents:
+  keyring:
+    - https://packages.wolfi.dev/os/wolfi-signing.rsa.pub
+  repositories:
+    - https://packages.wolfi.dev/os
+  packages:
+    - wolfi-base
+    - ca-certificates-bundle
+    - busybox
+
+accounts:
+  groups:
+    - groupname: nonroot
+      gid: 65532
+  users:
+    - username: nonroot
+      uid: 65532
+  run-as: nonroot
+
+annotations:
+  org.opencontainers.image.title: "Newsk"
+  org.opencontainers.image.description: "Newsk OS flavor - Wolfi-based base image by tir labs inc."
+  org.opencontainers.image.vendor: "tir labs inc."
+  org.opencontainers.image.url: "https://github.com/labsbytir/GoNewsk"
