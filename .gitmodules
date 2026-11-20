@@ -1,0 +1,4 @@
+[submodule "experiments/GoNewsk"]
+	path = experiments/GoNewsk
+	url = https://github.com/labsbytir/GoNewsk.git
+	branch = sandbox
