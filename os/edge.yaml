@@ -1,4 +1,4 @@
-# Newsk Edge — bare-bones headless scraper. Smallest runtime, no AI.
+# Newsk Edge — bare-bones headless collector. Smallest runtime, no AI.
 contents:
   keyring:
     - https://packages.wolfi.dev/os/wolfi-signing.rsa.pub
@@ -24,6 +24,6 @@ entrypoint:
 
 annotations:
   org.opencontainers.image.title: "Newsk Edge"
-  org.opencontainers.image.description: "Newsk Edge: bare-bones headless news scraper. tir labs inc."
+  org.opencontainers.image.description: "Newsk Edge: bare-bones headless news collector. tir labs inc."
   org.opencontainers.image.vendor: "tir labs inc."
   org.opencontainers.image.url: "https://github.com/labsbytir/Newsk"

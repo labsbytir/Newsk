@@ -1,4 +1,4 @@
-# Newsk Lite — scraping + AI model. Headless, no GUI.
+# Newsk Lite — collecting + AI model. Headless, no GUI.
 contents:
   keyring:
     - https://packages.wolfi.dev/os/wolfi-signing.rsa.pub
@@ -26,6 +26,6 @@ entrypoint:
 
 annotations:
   org.opencontainers.image.title: "Newsk Lite"
-  org.opencontainers.image.description: "Newsk Lite: headless scraper, AI packs install on first boot. tir labs inc."
+  org.opencontainers.image.description: "Newsk Lite: headless collector, AI packs install on first boot. tir labs inc."
   org.opencontainers.image.vendor: "tir labs inc."
   org.opencontainers.image.url: "https://github.com/labsbytir/GoNewsk"

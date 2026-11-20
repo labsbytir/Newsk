@@ -1,4 +1,4 @@
-# Newsk Full — Openbox desktop + EmDash + Harper + scraper + MiniLM.
+# Newsk Full — Openbox desktop + EmDash + Harper + collector + MiniLM.
 # LXQt is NOT in Wolfi (no lxqt-*, no QtSvg); this Openbox desktop is what
 # builds today. Same Newsk core as Lite. GUI runs against host X:
 #   podman run -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix newsk-full
@@ -40,6 +40,6 @@ entrypoint:
 
 annotations:
   org.opencontainers.image.title: "Newsk Full"
-  org.opencontainers.image.description: "Newsk Full: Openbox desktop + EmDash + Harper + scraper. tir labs inc."
+  org.opencontainers.image.description: "Newsk Full: Openbox desktop + EmDash + Harper + collector. tir labs inc."
   org.opencontainers.image.vendor: "tir labs inc."
   org.opencontainers.image.url: "https://github.com/labsbytir/GoNewsk"

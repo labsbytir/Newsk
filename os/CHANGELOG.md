@@ -8,8 +8,8 @@
 
 ## 0.1.0 — Flavor split + theming
 - Newsk base image (`os/base.yaml`): wolfi-base, Newsk key, OCI annotations.
-- Lite profile (`os/lite.yaml`): headless scraper + MiniLM embeddings + pglite.
-- Full profile (`os/full.yaml`): Openbox desktop + EmDash + Harper + scraper.
+- Lite profile (`os/lite.yaml`): headless collector + MiniLM embeddings + pglite.
+- Full profile (`os/full.yaml`): Openbox desktop + EmDash + Harper + collector.
 - System accent color (`os/theme/`): blue/green/amber/red/purple; `newsk-accent`
   rewrites Openbox, GTK, Xresources and swaps the wallpaper variant.
 - Wallpaper packs (`os/full/wallpapers/packs.json`): 7 countries so far, each with

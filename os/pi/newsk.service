@@ -1,5 +1,5 @@
 [Unit]
-Description=Newsk scraper
+Description=Newsk collector
 After=network-online.target
 Wants=network-online.target
 
