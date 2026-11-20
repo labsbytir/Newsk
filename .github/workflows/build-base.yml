@@ -1,0 +1,57 @@
+# .github/workflows/build-base.yml — Newsk base image only (Edge/Lite/Full out of scope).
+name: build-base
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Image tag (ghcr.io/labsbytir/newsk:<tag>)"
+        required: false
+        default: "latest"
+  push:
+    tags:
+      - "base-v*"
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-go@v6
+        with:
+          go-version: "1.27"
+
+      - name: Install apko (pinned)
+        run: |
+          go install chainguard.dev/apko@v1.5.2
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build base image tar
+        run: |
+          TAG="${{ inputs.tag || 'latest' }}"
+          apko build os/base.yaml "ghcr.io/labsbytir/newsk:${TAG}" newsk-base.tar \
+            --arch x86_64,aarch64
+
+      - name: Publish to GHCR
+        run: |
+          TAG="${{ inputs.tag || 'latest' }}"
+          apko publish os/base.yaml "ghcr.io/labsbytir/newsk:${TAG}" \
+            --arch x86_64,aarch64
+
+      - name: Upload image tar
+        uses: actions/upload-artifact@v7
+        with:
+          name: newsk-base.tar
+          path: newsk-base.tar
